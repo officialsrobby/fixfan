@@ -5,7 +5,7 @@ a = list(range(211650001,211800000))
 i=1
 for tokens in a:
 	try:
-		headers={'User-Agent':'Mozilla/5.0','Authorization':'Token b2bfaff03ca2789dcf2ca1387e7d7d5a321da038'}
+		headers={'User-Agent':'Mozilla/5.0','Authorization':'Token 510b152118e524377ef293c3576d26511c2bddbb'}
 		response = requests.post('https://id-api.spooncast.net/users/'+str(tokens)+'/follow/',headers=headers,timeout=1)
 		response2 = requests.post('http://id-api.spooncast.net/users/'+str(tokens)+'/fanmessages/',headers=headers,json={'contents':'Fan back dong kk'},timeout=1)
 		print(response)
